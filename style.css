@@ -1,0 +1,155 @@
+h1,p, input{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: rgb(255,0,0);
+    background: linear-gradient(0, rgba(255,0,0,1) 0%, rgba(170,0,0,1) 50%, rgba(85,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+section{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+main{
+    height: 75vh;
+    min-width: 30%;
+    min-width: 320px;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    position: relative;
+}
+/*Estilos del header------------------------------------------------------*/
+#header{
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__encabezado__titulo{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*Estilos main-----------------------------------------------------------*/
+#main{
+    box-shadow: 0 0 25px #000;
+}
+
+/*Estilos agregar--------------------------------------------------------*/
+#agregar{
+    height: 10%;
+}
+
+.agregar__contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.agregar__input{
+    width: 85%;
+    height: 50%;
+    font-size: 2em;
+    font-weight: 300;
+    border: none;
+}
+
+.agregar__input:focus{
+    outline: none;
+}
+
+.agregar__boton{
+    width: 15%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-plus{
+    color: #1587d6;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+/*Estilos lista----------------------------------------------------------*/
+
+#lista{
+    max-height: 76%;
+    overflow: auto;
+}
+
+.lista__tarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #000;
+    margin: .8em 0;
+}
+
+.lista__tarea:first-child{
+    margin-top: .3em;
+}
+
+.lista__tarea__cancelar{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista__tarea__texto{
+    width: 80%;
+}
+
+.fa-window-close{
+    color: #f00;
+    font-size: 1.2em;
+}
+
+.lista__tarea__texto__parrafo{
+    font-size: 1.3em;
+    margin-left: 1em;
+    text-transform: uppercase;
+    overflow: auto;
+}
+
+/*Estilos borrar---------------------------------------------------------*/
+
+#borrar{
+    height: 7%;
+}
+.borrar__todo{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.borrar__todo__boton{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.fa-trash-alt{
+    font-size: 1.7em;
+    color: #f00;
+    text-shadow: 0 0 5px #000;
+}
